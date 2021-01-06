@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "complexity": 5,
+        "duration": 24,
+        "date_created": "2021-01-13"
+    },
+    {
+        "id": 2,
+        "complexity": 6,
+        "duration": 36,
+        "date_created": "2021-01-14"
+    },
+    {
+        "id": 3,
+        "complexity": 10,
+        "duration": 48,
+        "date_created": "2021-01-15"
+    },
+    {
+        "id": 4,
+        "complexity": 3,
+        "duration": 12,
+        "date_created": "2021-01-16"
+    },
+    {
+        "id": 5,
+        "complexity": 1,
+        "duration": 6,
+        "date_created": "2021-01-17"
+    }
+]
