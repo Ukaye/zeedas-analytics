@@ -1,10 +1,11 @@
 version: 2.1
 orbs:
   irc: circleci/irc@0.2.0
+  node: circleci/node@3.0.0
 jobs:
   build:
-    docker:
-      - image: your-image
+    executor:
+      name: node/default
     steps:
       - checkout
       - irc/notify:
