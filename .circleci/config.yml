@@ -1,19 +1,19 @@
 version: 2.1
 orbs:
-  node: circleci/node@3.0.0
-  irc: circleci/irc@0.1.0
+  irc: circleci/irc@0.2.0
 jobs:
-  build-test-and-notify:
-    executor:
-      name: node/default
+  build:
+    docker:
+      - image: your-image
     steps:
+      - checkout
       - irc/notify:
-          server: 'https://0418d223e044.ngrok.io'
+          channel: deployment
+          message: Build completed!
+          nick: zeedas
           port: 6667
-          channel: '#deployment'
-          nick: 'zeedas'
-          message: webhook # default: "Your CircleCI Job has completed."
+          server: https://7c929776eb49.ngrok.io
 workflows:
-  build-and-notify:
+  your-workflow:
     jobs:
-      - build-test-and-notify
+      - build
