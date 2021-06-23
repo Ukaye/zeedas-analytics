@@ -9,9 +9,9 @@ jobs:
     steps:
       - checkout
       - irc/notify:
-          channel: deployment
+          channel: zeedas
           message: Build completed!
-          nick: zeedas
+          nick: zeedas123
           port: 6667
           server: irc.freenode.net
 workflows:
