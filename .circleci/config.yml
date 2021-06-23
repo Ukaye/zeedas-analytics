@@ -13,7 +13,7 @@ jobs:
           message: Build completed!
           nick: zeedas
           port: 6667
-          server: 7c929776eb49.ngrok.io
+          server: irc.freenode.net
 workflows:
   your-workflow:
     jobs:
