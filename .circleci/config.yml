@@ -1,0 +1,20 @@
+version: 2.1
+orbs:
+  irc: circleci/irc@0.2.0
+  node: circleci/node@3.0.0
+jobs:
+  build:
+    executor:
+      name: node/default
+    steps:
+      - checkout
+      - irc/notify:
+          channel: zeedas
+          message: Build completed!
+          nick: zeedas123
+          port: 6667
+          server: irc.freenode.net
+workflows:
+  your-workflow:
+    jobs:
+      - build
